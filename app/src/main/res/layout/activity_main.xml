@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/ic_weather_app_interface"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/btn"
+        android:hint="Dhaka"
+        android:editable="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_alignParentEnd="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinLayout"
+        android:layout_below="@id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="City"
+            android:textSize="35sp"
+
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Time"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Temp"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Feels"
+        android:layout_below="@id/Temp"
+        android:text="Feels"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Wind"
+        android:layout_below="@id/Feels"
+        android:text="Wind"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Humidity"
+        android:layout_below="@id/Wind"
+        android:text="Humidity"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        />
+
+<LinearLayout
+    android:id="@+id/Lin2"
+    android:layout_below="@+id/Humidity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunrise"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/Sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunset"
+        />
+
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
